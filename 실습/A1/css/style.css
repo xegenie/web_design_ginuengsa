@@ -1,0 +1,113 @@
+* {
+     margin: 0; 
+     padding: 0; 
+     list-style: none; 
+     box-sizing: border-box;
+}
+a { 
+    text-decoration: none; 
+    display: block;
+}
+
+:root {
+    --main-color: #ff4c4c;
+    --sub-color: #fdab7bc2;
+    --back-color: #ffffff;
+    --text-color: #333333;
+}
+
+body {
+    background-color: var(--back-color);
+    color: var(--text-color);
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 200px;
+    height: 40px;
+}
+
+.mainMenu {
+    width: 800px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.mainMenu a {
+    width: 25%;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.mainMenu a:hover {
+    background: rgba(17, 17, 17, 0.1);
+}
+
+.subMenu{
+    width:800px; /*메인메뉴 위치랑 동일하게*/
+    background: var(--sub-color);
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+}
+
+.subMenu ul {
+    width:25%;
+}
+
+.subMenu ul li a {
+    width: 100%;
+    text-align: center;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+/* ------------------------------- */
+
+.imgSlide{
+    position:relative;
+    width:100%;
+    height:300px;
+    overflow: hidden;
+    background: #eeeeee;
+  }
+  
+  .imgSlide > a{
+    position:absolute;
+    top:0;
+    left:0;
+    overflow: hidden; /* 이미지슬라이드가 좌우로 움직일때는 반드시 필요 */
+  }
+  .imgSlide a > img {height:100%;}
+
+
+
+
+
